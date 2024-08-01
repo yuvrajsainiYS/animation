@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}   
+.circle {
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+
+.circle::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 2px solid red;
+    border-radius:50% ;
+    background-color: blue;
+    
+    
+        
+}
+.circle:hover::after{
+    width: 70%;
+    height: 70%;
+    transition: 0.5s;
+}
